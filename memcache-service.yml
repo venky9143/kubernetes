@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: vpromc
+  name: vprocache01
 spec:
   selector:
-    app.kubernetes.io/name: vpromc
+    app.kubernetes.io/name: vprocache
   type: ClusterIP
   ports:
     - protocol: TCP
