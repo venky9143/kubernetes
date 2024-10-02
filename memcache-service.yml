@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vpromc
+spec:
+  selector:
+    app.kubernetes.io/name: vpromc
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 11211
+      targetPort: vpromc-port
